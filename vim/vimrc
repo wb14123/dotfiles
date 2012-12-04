@@ -23,4 +23,3 @@ syntax on             " set syntax highlight on
 set hlsearch          " highlight search
 set smartindent       " smart indent
 set bs=indent,eol,start      " allow backspacing over everything in insert mode
-au BufRead,BufNewFile *.markdown,*.md,*.txt set spell " check spell in markdown and txt
