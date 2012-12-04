@@ -1,0 +1,23 @@
+
+""""""""""""""""""""""""""""""""""""""""""""
+"            Package setup                 "
+""""""""""""""""""""""""""""""""""""""""""""
+
+" Pathogen : Vim package manager
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" CloseTag : Intelligently close HTML tags
+autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+
+""""""""""""""""""""""""""""""""""""""""""""
+"           General setup                  "
+""""""""""""""""""""""""""""""""""""""""""""
+
+set number            " set line number
+syntax on             " set syntax highlight on
+set hlsearch          " highlight search
+set smartindent       " smart indent
+set bs=indent,eol,start      " allow backspacing over everything in insert mode
+au BufRead,BufNewFile *.markdown,*.md,*.txt set spell " check spell in markdown and txt

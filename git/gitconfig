@@ -1,0 +1,7 @@
+[user]
+	name = Bin Wang
+	email = wbin00@gmail.com
+[color]
+	ui = auto
+[diff]
+	tool = vimdiff

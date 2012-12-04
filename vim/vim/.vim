@@ -1,0 +1,1 @@
+/home/wangbin/dotfiles/vim/vim
