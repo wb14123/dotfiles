@@ -86,11 +86,18 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 "           General setup                  "
 """"""""""""""""""""""""""""""""""""""""""""
 
+" encoding dectection
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+
+" enable filetype dectection and ft specific plugin/indent
+filetype plugin indent on
+
 set number            " set line number
 set cursorline        " highlight current line
 set bs=indent,eol,start      " allow backspacing over everything in insert mode
 
 " Set syntax
+syntax enable
 syntax on             " set syntax highlight on
 autocmd Syntax javascript set syntax=jquery   " JQuery support
 
