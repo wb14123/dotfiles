@@ -3,7 +3,10 @@
 check_link() {
 	LINK=`pwd`/$1
 	TARGET=~/$2
-	if [ -e $TARGET ] ; then
+	if [ -h $TARGET ] ; then
+		echo -n "remove symbolic link: "
+		rm -v $TARGET
+	elif [ -e $TARGET ] ; then
 		echo -n "move: "
 		mv -v $TARGET $TARGET.old
 	fi
@@ -11,6 +14,7 @@ check_link() {
 	ln -sv $LINK $TARGET
 }
 
+git submodule init && git submodule update
 check_link zsh/oh-my-zsh   .oh-my-zsh
 check_link zsh/zshrc       .zshrc
 check_link vim/vim         .vim
