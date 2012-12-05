@@ -10,3 +10,9 @@
 [submodule "vim/vim/bundle/closetag"]
 	path = vim/vim/bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
+[submodule "vim/vim/bundle/zencoding-vim"]
+	path = vim/vim/bundle/zencoding-vim
+	url = http://github.com/mattn/zencoding-vim.git
+[submodule "vim/vim/bundle/supertab"]
+	path = vim/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

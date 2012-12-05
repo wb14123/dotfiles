@@ -16,10 +16,38 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 """"""""""""""""""""""""""""""""""""""""""""
 
 set number            " set line number
-syntax on             " set syntax highlight on
-set hlsearch          " highlight search
-set smartindent       " smart indent
+set cursorline        " highlight current line
 set bs=indent,eol,start      " allow backspacing over everything in insert mode
+
+" Set syntax
+syntax on             " set syntax highlight on
+autocmd Syntax javascript set syntax=jquery   " JQuery support
+
+" Search operations
+set hlsearch          " highlight search
+set ignorecase
+set smartcase
+set incsearch
+
+" Set indent
+set autoindent
+set smartindent       " smart indent
+autocmd FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8 textwidth=79
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
+autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
+autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
+autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0 expandtab
+autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
+
+
+
+" Set what are shown in statubar
+set showmatch
+set showcmd
+set title
+set laststatus=2
+set matchtime=2
 
 " highlight end-of-line whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
