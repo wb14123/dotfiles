@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3" 
+        execute="/usr/bin/openbox-menu /etc/xdg/menus/lxde-applications.menu" />
+</openbox_menu>
