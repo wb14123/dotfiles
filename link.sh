@@ -21,3 +21,4 @@ check_link vim/vim         .vim
 check_link vim/vimrc       .vimrc
 check_link git/gitconfig   .gitconfig
 check_link xprofile        .xprofile
+check_link openbox         .config/openbox

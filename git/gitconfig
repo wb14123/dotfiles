@@ -5,3 +5,8 @@
 	ui = auto
 [diff]
 	tool = vimdiff
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = wbin00@gmail.com
+	smtpserverport = 587
