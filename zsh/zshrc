@@ -36,4 +36,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH=$PATH:~/.gem/ruby/1.9.1/bin
+
 # Customize to your needs...
