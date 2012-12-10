@@ -130,11 +130,11 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@!$/
 
 " emacs key-bindings
-imap <c-a> <esc>0i
-imap <c-e> <esc>$a
-imap <c-k> <esc>d$a
-imap <c-u> <esc>ddi
-nmap <c-a> 0
-nmap <c-e> $
-nmap <c-k> d$
-nmap <c-u> dd
+inoremap <c-a> <esc>0i
+inoremap <c-e> <esc>$a
+inoremap <c-k> <esc>d$a
+inoremap <c-u> <esc>ddi
+nnoremap <c-a> 0
+nnoremap <c-e> $
+nnoremap <c-k> d$
+nnoremap <c-u> dd
