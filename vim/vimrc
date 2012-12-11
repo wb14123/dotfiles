@@ -137,4 +137,3 @@ inoremap <c-u> <esc>ddi
 nnoremap <c-a> 0
 nnoremap <c-e> $
 nnoremap <c-k> d$
-nnoremap <c-u> dd
