@@ -331,7 +331,7 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <execute>/usr/bin/thunar</execute>
+        <execute>/usr/bin/nemo</execute>
       </action>
     </keybind>
     <keybind key="W-Return">
