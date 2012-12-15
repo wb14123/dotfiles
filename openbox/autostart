@@ -33,7 +33,7 @@ sudo killall conky > /dev/null 2>&1
 conky &
 
 #set wallpaper
-feh --bg-scale ~/Pictures/linux/archlinux-kiss-2562×1603.png &
+feh --bg-scale ~/Pictures/linux/archlinux-nightly-temptation-1920x1200.png
 
 sudo killall volwheel > /dev/null 2>&1
 volwheel &
