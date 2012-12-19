@@ -99,7 +99,6 @@ set bs=indent,eol,start      " allow backspacing over everything in insert mode
 " Set syntax
 syntax enable
 syntax on             " set syntax highlight on
-autocmd Syntax javascript set syntax=jquery   " JQuery support
 
 " Search operations
 set hlsearch          " highlight search
