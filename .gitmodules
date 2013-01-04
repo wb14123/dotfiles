@@ -28,3 +28,6 @@
 [submodule "vim/vim/bundle/csExplorer"]
 	path = vim/vim/bundle/csExplorer
 	url = https://github.com/jdevera/vim-cs-explorer.git
+[submodule "vim/vim/bundle/vim-slime"]
+	path = vim/vim/bundle/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
