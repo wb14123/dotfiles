@@ -24,3 +24,5 @@ check_link xprofile        .xprofile
 check_link openbox         .config/openbox
 check_link tmux.conf       .tmux.conf
 check_link awesome         .config/awesome
+check_link Xresources      .Xresources
+xrdb ~/.Xresources
