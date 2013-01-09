@@ -31,3 +31,6 @@
 [submodule "vim/vim/bundle/vim-slime"]
 	path = vim/vim/bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime.git
+[submodule "awesome/awesome-freedesktop"]
+	path = awesome/awesome-freedesktop
+	url = https://github.com/terceiro/awesome-freedesktop.git
