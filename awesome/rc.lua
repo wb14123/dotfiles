@@ -5,7 +5,7 @@ local naughty = require("naughty")
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 modkey = "Mod4"
 
-terminal = "konsol"
+terminal = "konsole"
 editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -28,7 +28,7 @@ local layouts = {
 tags = {
 	names = { "term", "www", "chat", "mail", "work", "media", "other" },
 	layout = {
-		layouts[10], layouts[10], layouts[1],
+		layouts[1], layouts[10], layouts[1],
 		layouts[10], layouts[2], layouts[10], layouts[2]
 	}
 }
@@ -86,21 +86,21 @@ tasklist.buttons = awful.util.table.join(
 statusbar = {}
 for s = 1, screen.count() do
 	-- create taglist
-	taglist[s] = awful.widget.taglist(s, awful.widget.taglist.lable.all, taglist.bottons)
+	taglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, taglist.bottons)
 	-- create tasklist
 	tasklist[s] = awful.widget.tasklist(function (c)
-		return awful.widget.tasklist.lable.currenttags(c, s)
+		return awful.widget.tasklist.label.currenttags(c, s)
 	end, tasklist.buttons)
 
-	statusbar[s] = awful.wibox({ position="bottom", screen=s })
+	statusbar[s] = awful.wibox({ position="top", screen=s })
 	statusbar[s].widgets = {
 		{
 			taglist[s],
-			tasklist[s],
 			layout = awful.widget.layout.horizontal.leftright
 		},
 		textclock,
 		systray,
+		tasklist[s],
 		layout = awful.widget.layout.horizontal.rightleft
 	}
 end
@@ -108,24 +108,25 @@ end
 
 -- {{{ key bindings
 root.keys(awful.util.table.join(
-	awful.key({modkey,    }, "h", awful.tag.viewprev),
-	awful.key({modkey,    }, "l", awful.tag.viewnext),
-	awful.key({modkey,    }, "Tab", function ()
-		awful.client.focus.history.previous()
-		if client.focus then
-			client.focus:raise()
-		end
-	end),
+ 	awful.key({modkey,    }, "h", awful.tag.viewprev),
+ 	awful.key({modkey,    }, "l", awful.tag.viewnext),
+	awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
+	awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
+ 	awful.key({modkey,    }, "Tab", function ()
+ 		awful.client.focus.history.previous()
+ 		if client.focus then
+ 			client.focus:raise()
+ 		end
+ 	end),
 
-	-- program
-	awful.key({modkey,    }, "return", function ()
-		awful.util.spawn(terminal) end)
+ 	-- program
+ 	awful.key({modkey,    }, "Return", function () awful.util.spawn(terminal) end)
 ))
 -- }}}
 
 -- {{{ mouse bindings
 root.buttons(awful.util.table.join(
-	aweful.button({}, 3, function () mainmenu:toggle() end)
+	awful.button({}, 3, function () mainmenu:toggle() end)
 ))
 -- }}}
 
@@ -135,7 +136,7 @@ awesomemenu = {
 	{ "quit", awesome.quit}
 }
 mainmenu = awful.menu({ items = {
-	{"awesome", awesomemunu, beautiful.awesome_icon},
+	{"awesome", awesomemenu, beautiful.awesome_icon},
 	{"open terminal", terminal}
 }})
 -- }}}
