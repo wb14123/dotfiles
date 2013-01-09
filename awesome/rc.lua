@@ -5,7 +5,7 @@ local naughty = require("naughty")
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 modkey = "Mod4"
 
-terminal = "konsole"
+terminal = "xterm"
 editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 
