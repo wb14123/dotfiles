@@ -118,7 +118,7 @@ autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType coffee,javascript,jade setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
-autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0 expandtab
+autocmd FileType html,htmldjango,xhtml,haml,xml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0 expandtab
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
 
 " Set what are shown in statubar
