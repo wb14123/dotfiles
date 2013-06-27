@@ -15,7 +15,6 @@ check_link() {
 }
 
 git submodule init && git submodule update
-check_link zsh/oh-my-zsh   .oh-my-zsh
 check_link zsh/zshrc       .zshrc
 check_link vim/vim         .vim
 check_link vim/vimrc       .vimrc
