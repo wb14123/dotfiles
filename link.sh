@@ -20,8 +20,4 @@ check_link vim/vim         .vim
 check_link vim/vimrc       .vimrc
 check_link git/gitconfig   .gitconfig
 check_link xprofile        .xprofile
-check_link openbox         .config/openbox
 check_link tmux.conf       .tmux.conf
-check_link awesome         .config/awesome
-check_link Xresources      .Xresources
-echo "reconfig xterm" && xrdb ~/.Xresources
