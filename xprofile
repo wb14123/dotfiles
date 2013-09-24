@@ -1,5 +1,11 @@
+# for language
 export LANG=zh_CN.UTF-8
 export LC_ALL="zh_CN.UTF-8"
+
+# for input method
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+
+# for steam
+export STEAM_FRAME_FORCE_CLOSE=1
