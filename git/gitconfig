@@ -12,3 +12,5 @@
 	smtpserverport = 587
 [core]
 	excludesfile = /home/wangbin/.global_ignore
+[push]
+	default = simple
