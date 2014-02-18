@@ -9,3 +9,6 @@ export XMODIFIERS=@im=fcitx
 
 # for steam
 export STEAM_FRAME_FORCE_CLOSE=1
+
+# for android ndk
+export NDK_ROOT=/opt/android-ndk
