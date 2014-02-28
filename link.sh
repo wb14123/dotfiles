@@ -20,7 +20,6 @@ check_link vim/vim           .vim
 check_link vim/vimrc         .vimrc
 check_link git/gitconfig     .gitconfig
 check_link git/global_ignore .global_ignore
-check_link xprofile          .xprofile
 check_link tmux.conf         .tmux.conf
 # mysql config, see https://github.com/nitso/colour-mysql-console
 check_link mysql/grcat       .grcat
