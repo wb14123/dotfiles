@@ -37,11 +37,12 @@ source $ZSH/oh-my-zsh.sh
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export PATH=$PATH:~/.gem/ruby/2.1.0/bin
-export PATH=$PATH:/opt/android-sdk/tools
 export EDITOR="vim"
 
 export GOPATH="/home/wangbin/gopath"
 export GOROOT="/usr/lib/go"
+
+export PATH=$PATH:/opt/android-sdk/tools:$GOPATH/bin
 
 # set tmux to 256color
 alias tmux='TERM=xterm-256color tmux -2'
