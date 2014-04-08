@@ -12,3 +12,6 @@ export STEAM_FRAME_FORCE_CLOSE=1
 
 # for android ndk
 export NDK_ROOT=/opt/android-ndk
+
+export GOPATH=/home/wangbin/gopath
+export GOROOT=/usr/lib/go
