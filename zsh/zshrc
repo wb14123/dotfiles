@@ -30,15 +30,19 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump git)
+plugins=(autojump git go)
 
 source $ZSH/oh-my-zsh.sh
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export PATH=$PATH:~/.gem/ruby/2.1.0/bin
-export PATH=$PATH:/opt/android-sdk/tools
 export EDITOR="vim"
+
+export GOPATH="/home/wangbin/gopath"
+export GOROOT="/usr/lib/go"
+
+export PATH=$PATH:/opt/android-sdk/tools:$GOPATH/bin
 
 # set tmux to 256color
 alias tmux='TERM=xterm-256color tmux -2'
