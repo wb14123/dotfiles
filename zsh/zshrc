@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=/usr/share/oh-my-zsh 
+ZSH=~/oh-my-zsh 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -39,7 +39,7 @@ export LC_ALL="en_US.UTF-8"
 export PATH=$PATH:~/.gem/ruby/2.1.0/bin
 export EDITOR="vim"
 
-export GOPATH="/home/wangbin/gopath"
+export GOPATH="/Users/wangbin/gopath"
 export GOROOT="/usr/lib/go"
 
 export PATH=$PATH:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin
