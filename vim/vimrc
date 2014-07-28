@@ -140,6 +140,9 @@ set statusline=%F%y%m%r%=Current:%l,%c
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@!$/
 
+map k gk
+map j gj
+
 " emacs key-bindings
 inoremap <c-a> <esc>0i
 inoremap <c-e> <esc>$a
