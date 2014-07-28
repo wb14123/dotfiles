@@ -40,7 +40,7 @@ export PATH=$PATH:~/.gem/ruby/2.1.0/bin
 export EDITOR="vim"
 
 export GOPATH="$HOME/gopath"
-export GOROOT="/usr/local/go"
+export GOROOT="/usr/local/opt/go/libexec/"
 
 export PATH=$PATH:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin
 
