@@ -14,7 +14,18 @@ check_link() {
 	ln -sv $LINK $TARGET
 }
 
-git submodule init && git submodule update
+fetch_vim_bundle() {
+        mkdir vim/vim/autoload
+        curl -LSso vim/vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+        mkdir vim/vim/bundle
+	cd vim/vim/bundle
+	for bundle in `cat ../../bundles`; do
+		git clone $bundle
+	done
+	cd ../../..
+}
+
+fetch_vim_bundle
 check_link zsh/zshrc         .zshrc
 check_link vim/vim           .vim
 check_link vim/vimrc         .vimrc
