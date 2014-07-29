@@ -18,3 +18,4 @@ git://github.com/tpope/vim-pathogen.git
 https://github.com/jpalardy/vim-slime.git
 https://github.com/Shougo/vimproc.git
 http://github.com/mattn/emmet-vim/
+https://github.com/groenewege/vim-less.git
