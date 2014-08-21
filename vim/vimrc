@@ -90,7 +90,7 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 "           General setup                  "
 """"""""""""""""""""""""""""""""""""""""""""
 " theme
-colorscheme delek
+colorscheme default
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
