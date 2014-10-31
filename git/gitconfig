@@ -11,6 +11,6 @@
 	smtpuser = wbin00@gmail.com
 	smtpserverport = 587
 [core]
-	excludesfile = /home/wangbin/.global_ignore
+	excludesfile = /Users/wangbin/.global_ignore
 [push]
 	default = simple
