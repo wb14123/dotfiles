@@ -42,7 +42,7 @@ export EDITOR="vim"
 export GOPATH="$HOME/gopath"
 export GOROOT="/usr/local/opt/go/libexec/"
 
-export PATH=$PATH:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin
+export PATH=$PATH:/usr/local/sbin:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # set tmux to 256color
