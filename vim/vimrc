@@ -159,3 +159,5 @@ au BufNewFile,BufRead *.hs map <buffer> <F1> :Hoogle
 
 nmap <F8> :TagbarToggle<CR>
 autocmd vimenter *.hs NERDTree
+
+set completeopt-=preview
