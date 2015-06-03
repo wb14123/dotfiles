@@ -64,3 +64,6 @@ ZSH_THEME_GIT_PROMPT_PREFIX="("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") "
 ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange *%{$fg_bold[yellow]%}"
 ulimit -n 1024
+
+alias gcl='git branch --merged | grep -v \* | xargs git branch -D'
+alias g2n="git add -A . && git checkout master && git pull origin master && gcl && git checkout -b"
