@@ -35,3 +35,4 @@ check_link tmux.conf         .tmux.conf
 # mysql config, see https://github.com/nitso/colour-mysql-console
 check_link mysql/grcat       .grcat
 check_link mysql/my.cnf      .my.cnf
+cd ~ & git clone https://github.com/robbyrussell/oh-my-zsh.git
