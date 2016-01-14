@@ -71,3 +71,5 @@ alias g2n="git add -A . && git stash && git checkout master && git pull origin m
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/wangbin/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
