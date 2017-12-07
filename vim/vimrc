@@ -74,6 +74,8 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd filetype python setlocal completeopt-=preview
 
+au BufNewFile,BufRead *.we set filetype=html
+
 " Enable heavy omni completion, which require computational power and may stall the vim. 
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
@@ -117,8 +119,10 @@ set autoindent
 set smartindent       " smart indent
 autocmd FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8 textwidth=79
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
+autocmd FileType proto setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
 autocmd FileType php,matlab setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType coffee,javascript,jade,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType erlang setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType lua setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
@@ -161,3 +165,7 @@ nmap <F8> :TagbarToggle<CR>
 autocmd vimenter *.hs NERDTree
 
 set completeopt-=preview
+
+set encoding=utf-8
+
+let g:syntastic_python_checkers = ['pylint']
