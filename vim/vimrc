@@ -121,9 +121,10 @@ autocmd FileType c setlocal tabstop=8 shiftwidth=8 softtabstop=8 textwidth=79
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
 autocmd FileType proto setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=79 expandtab
 autocmd FileType php,matlab setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
-autocmd FileType coffee,javascript,jade,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType coffee,javascript,jade,yaml,vue setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
+autocmd FileType qml setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType erlang setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType lua setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79 expandtab
 autocmd FileType html,htmldjango,xhtml,haml,xml,md,markdown setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0 expandtab
@@ -169,3 +170,6 @@ set completeopt-=preview
 set encoding=utf-8
 
 let g:syntastic_python_checkers = ['pylint']
+
+" disable java check
+let g:loaded_syntastic_java_javac_checker = 1
