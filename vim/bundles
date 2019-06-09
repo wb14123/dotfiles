@@ -25,3 +25,4 @@ https://github.com/JuliaLang/julia-vim.git
 https://github.com/derekwyatt/vim-scala.git
 https://github.com/rhysd/vim-grammarous.git
 https://github.com/peterhoeg/vim-qml.git
+git clone https://github.com/cespare/vim-toml.git
