@@ -1,6 +1,6 @@
 [user]
 	name = Bin Wang
-	email = wbin00@gmail.com
+	email = bin.wang@mail.binwang.me
 [color]
 	ui = auto
 [diff]
@@ -11,6 +11,6 @@
 	smtpuser = wbin00@gmail.com
 	smtpserverport = 587
 [core]
-	excludesfile = /Users/wangbin/.global_ignore
+	excludesfile = /home/wangbin/.global_ignore
 [push]
 	default = simple
