@@ -54,11 +54,11 @@ alias tmux='TERM=xterm-256color tmux -2'
 eval my_orange='$FG[214]'
 
 function prompt_char {
-	if [ $UID -eq 0 ]; then echo "#"; else echo ">"; fi
+	if [ $UID -eq 0 ]; then echo "#"; else echo "->"; fi
 }
 
 PROMPT='
-%(!.%{$fg_bold[red]%}.%{$fg_bold[red]%}%(?..[%?] )%{$fg_bold[green]%}%n%{$fg_bold[green]%}@)%m %{$fg_bold[blue]%}%(!.%1~.%~) %{$fg_bold[yellow]%}$(git_prompt_info)%{$fg_bold[blue]%}%_$(prompt_char)%{$reset_color%} '
+%(!.%{$fg_bold[red]%}.%{$fg_bold[red]%}%(?..[%?] )%{$FG[178]%}%n%{$fg_bold[grey]%} @ )$FG[070]%m %{$FG[148]%}(%(!.%1~.%~)) %{$fg_bold[yellow]%}$(git_prompt_info)%{$fg_bold[grey]%}%_$(prompt_char)%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") "
@@ -106,6 +106,8 @@ bindkey '^P' up-history
 bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
+bindkey '^E' end-of-line
+bindkey '^A' beginning-of-line
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 
