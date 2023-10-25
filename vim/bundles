@@ -1,5 +1,5 @@
-git://github.com/docunext/closetag.vim.git
-git://github.com/Raimondi/delimitMate.git
+https://github.com/docunext/closetag.vim.git
+https://github.com/Raimondi/delimitMate.git
 https://github.com/eagletmt/ghcmod-vim.git
 https://github.com/Blackrush/vim-gocode.git
 https://github.com/fatih/vim-go.git
@@ -9,15 +9,15 @@ https://github.com/Shougo/neocomplcache.git
 https://github.com/scrooloose/nerdtree.git
 https://github.com/ervandew/supertab.git
 https://github.com/scrooloose/syntastic.git
-git://github.com/majutsushi/tagbar
+https://github.com/majutsushi/tagbar
 https://github.com/kchmck/vim-coffee-script.git
 https://github.com/elixir-lang/vim-elixir.git
 https://github.com/bitc/vim-hdevtools.git
-git://github.com/digitaltoad/vim-jade.git
-git://github.com/tpope/vim-pathogen.git
+https://github.com/digitaltoad/vim-jade.git
+https://github.com/tpope/vim-pathogen.git
 https://github.com/jpalardy/vim-slime.git
 https://github.com/Shougo/vimproc.git
-http://github.com/mattn/emmet-vim/
+https://github.com/mattn/emmet-vim/
 https://github.com/groenewege/vim-less.git
 https://github.com/wting/rust.vim.git
 https://github.com/elzr/vim-json.git
