@@ -14,3 +14,7 @@
 	excludesfile = /home/wangbin/.global_ignore
 [push]
 	default = simple
+[pull]
+	rebase = true
+[safe]
+	directory = /opt/flutter

@@ -36,14 +36,14 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export PATH=/usr/local/bin:$PATH:~/.gem/ruby/2.1.0/bin
+export PATH=/usr/local/bin:$PATH:~/.gem/ruby/3.0.0/bin
 export EDITOR="vim"
 
-export GOPATH="$HOME/gopath"
-export GOROOT="/usr/local/opt/go/libexec/"
+export GOPATH="$HOME/go"
+export GOROOT="/usr/lib/go"
 
-export PATH=$PATH:/usr/local/sbin:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export PATH=$PATH:/usr/local/sbin:/opt/android-sdk/tools:$GOPATH/bin:$GOROOT/bin:~/.cabal/bin:~/.local/bin
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # set tmux to 256color
 alias tmux='TERM=xterm-256color tmux -2'
@@ -67,14 +67,14 @@ ulimit -n 1024
 
 alias gcl='git branch --merged | grep -v \* | xargs git branch -D'
 alias g2n="git add -A . && git stash && git checkout master && git pull origin master && gcl && git stash pop &&  git checkout -b"
+alias copy='xsel -ib'
 
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/wangbin/.docker/machine/machines/docker-vm"
-export DOCKER_MACHINE_NAME="docker-vm"
+# export DOCKER_TLS_VERIFY="1"
+# export DOCKER_HOST="tcp://192.168.99.100:2376"
+# export DOCKER_CERT_PATH="/Users/wangbin/.docker/machine/machines/docker-vm"
+# export DOCKER_MACHINE_NAME="docker-vm"
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
-
 
 # zsh vim bindings
 
@@ -116,3 +116,25 @@ bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
+
+export VAGRANT_HOME=/home/wangbin/data/vagrant
+source /usr/share/nvm/init-nvm.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/wangbin/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/wangbin/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/wangbin/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/wangbin/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
