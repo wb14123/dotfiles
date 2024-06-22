@@ -138,3 +138,29 @@ unset __conda_setup
 
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
+
+
+
+# zellij_tab_name_update_dir() {
+# 	if [[ -n $ZELLIJ ]]; then
+# 		tab_name=''
+# 		tab_name=`dirs -c ; dirs`
+# 		if [[ $tab_name == $HOME ]]; then
+# 			tab_name="~"
+# 		fi
+# 		command nohup zellij action rename-tab $tab_name >/dev/null 2>&1
+# 	fi
+# }
+# 
+# zellij_tab_name_update_dir
+# chpwd_functions+=(zellij_tab_name_update_dir)
+
+# zellij_tab_name_update_exec() {
+# 	tab_name=$2
+# 	command nohup zellij action rename-tab "$tab_name" >/dev/null 2>&1
+# }
+# 
+# preexec_functions+=(zellij_tab_name_update_exec)
+# precmd_functions+=(zellij_tab_name_update_dir)
+
+source <(fzf --zsh)
