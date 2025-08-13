@@ -20,6 +20,10 @@ let g:slime_paste_file = tempname()
 " theme
 colorscheme default
 
+" Remap window navigation from Ctrl+w to Ctrl+b
+nnoremap <C-b> <C-w>
+
+
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
@@ -99,3 +103,17 @@ let g:syntastic_python_checkers = ['pylint']
 
 " disable java check
 let g:loaded_syntastic_java_javac_checker = 1
+
+" word level diff
+let g:DiffUnit="Word1"
+
+" wrap in diff
+autocmd VimEnter * if &diff
+autocmd VimEnter *   windo set wrap
+autocmd VimEnter * endif
+
+" Better diff colors for dark background
+highlight DiffAdd    ctermbg=22  ctermfg=white guibg=#003300 guifg=white
+highlight DiffChange ctermbg=16 ctermfg=white guibg=#001c65 guifg=white
+highlight DiffDelete ctermbg=52  ctermfg=red   guibg=#330000 guifg=#ff6666
+highlight DiffText   ctermbg=53  ctermfg=white guibg=#330033 guifg=white
