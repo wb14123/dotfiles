@@ -110,6 +110,7 @@ let g:DiffUnit="Word1"
 " wrap in diff
 autocmd VimEnter * if &diff
 autocmd VimEnter *   windo set wrap
+autocmd VimEnter *   windo set noreadonly
 autocmd VimEnter * endif
 
 " Better diff colors for dark background
