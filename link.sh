@@ -26,6 +26,7 @@ fetch_vim_bundle() {
 }
 
 fetch_vim_bundle
+check_link bash_aliases      .bash_aliases
 check_link zsh/zshrc         .zshrc
 check_link vim/vim           .vim
 check_link vim/vimrc         .vimrc

@@ -163,3 +163,7 @@ alias getclip="xclip -selection c -o"
 # precmd_functions+=(zellij_tab_name_update_dir)
 
 source <(fzf --zsh)
+
+# alias claude="~/hobbi_source/claude-code-sandbox/claude-code-wrapper"
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+export BASH_ENV=~/.bash_aliases
